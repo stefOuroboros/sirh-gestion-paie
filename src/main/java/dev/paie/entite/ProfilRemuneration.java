@@ -2,16 +2,13 @@ package dev.paie.entite;
 
 import java.util.List;
 
-
 public class ProfilRemuneration {
 
 	private Integer id;
 	private String code;
 
-	private List<Cotisation> cotisationsNonImposables;
-	
-	private List<Cotisation> cotisationsImposables;
-	
+	private List<Cotisation> cotisations;
+
 	private List<Avantage> avantages;
 
 	public Integer getId() {
@@ -30,20 +27,12 @@ public class ProfilRemuneration {
 		this.code = code;
 	}
 
-	public List<Cotisation> getCotisationsNonImposables() {
-		return cotisationsNonImposables;
+	public List<Cotisation> getCotisations() {
+		return cotisations;
 	}
 
-	public void setCotisationsNonImposables(List<Cotisation> cotisationsNonImposables) {
-		this.cotisationsNonImposables = cotisationsNonImposables;
-	}
-
-	public List<Cotisation> getCotisationsImposables() {
-		return cotisationsImposables;
-	}
-
-	public void setCotisationsImposables(List<Cotisation> cotisationsImposables) {
-		this.cotisationsImposables = cotisationsImposables;
+	public void setCotisations(List<Cotisation> cotisations) {
+		this.cotisations = cotisations;
 	}
 
 	public List<Avantage> getAvantages() {

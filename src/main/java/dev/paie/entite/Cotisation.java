@@ -9,7 +9,7 @@ public class Cotisation {
 	private String libelle;
 	private BigDecimal tauxSalarial;
 	private BigDecimal tauxPatronal;
-	
+	private Boolean imposable = false;
 	
 	public String getCode() {
 		return code;
@@ -42,9 +42,10 @@ public class Cotisation {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	
-	
-	
-	
-
+	public Boolean getImposable() {
+		return imposable;
+	}
+	public void setImposable(Boolean imposable) {
+		this.imposable = imposable;
+	}
 }
