@@ -33,7 +33,6 @@ public class CalculerRemunerationServiceSimpleTest {
 	
 	@Test
 	public void test_calculer() {
-		// TODO remplacer null par un objet bulletin
 		
 		/* SALAIRE_BASE = GRADE.NB_HEURES_BASE * GRADE.TAUX_BASE
 

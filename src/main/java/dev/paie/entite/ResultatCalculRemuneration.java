@@ -57,5 +57,4 @@ public class ResultatCalculRemuneration {
 		this.netAPayer = netAPayer;
 	}
 
-	// TODO getters & setters à générer
 }
