@@ -1,3 +1,4 @@
+package dev.paie.service;
 import java.math.BigDecimal;
 
 import javax.persistence.EntityManager;
@@ -43,7 +44,7 @@ public class JpaTest {
     	
         // TODO vérifier qu'il est possible de récupérer la nouvelle cotisation
     	
-    	Cotisation findCot = em.find(Cotisation.class, );
+    	//Cotisation findCot = em.find(Cotisation.class, );
     	
     	
         // TODO modifier une cotisation
