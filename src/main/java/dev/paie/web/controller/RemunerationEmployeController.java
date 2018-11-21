@@ -31,7 +31,6 @@ public class RemunerationEmployeController {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("employes/creerEmploye");
         RemunerationEmploye employe = new RemunerationEmploye();
-//        employe.setMatricule("Veuillez saisir un matricule");
         mv.addObject("employe", employe);
         mv.addObject("listeEntreprises",entrepriseRepos.findAll());
         mv.addObject("listeProfilRemuneration", profilRemunerationRepos.findAll());

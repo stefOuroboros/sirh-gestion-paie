@@ -26,7 +26,7 @@ public class PaieUtilsTest {
     @Test
     public void test_formaterBigDecimal_entier_positif() {
 
-        String resultat = paieUtils.formaterBigDecimal(new BigDecimal("2"));
+        String resultat = PaieUtils.formaterBigDecimal(new BigDecimal("2"));
 
         assertThat(resultat, equalTo("2.00"));
 
@@ -35,7 +35,7 @@ public class PaieUtilsTest {
     @Test
     public void test_formaterBigDecimal_trois_chiffres_apres_la_virgule() {
 
-        String resultat = paieUtils.formaterBigDecimal(new BigDecimal("2.199"));
+        String resultat = PaieUtils.formaterBigDecimal(new BigDecimal("2.199"));
 
         assertThat(resultat, equalTo("2.20"));
 

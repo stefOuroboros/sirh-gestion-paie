@@ -38,6 +38,10 @@
 					<td>${employe.grade.code}</td>
 				</tr>
 				<tr>
+				<td>poste</td>
+				<td>${employe.profilRemuneration.code}</td>
+				</tr>
+				<tr>
 					<td>Entreprise</td>
 					<td>${employe.entreprise.denomination}</td>
 				</tr>
