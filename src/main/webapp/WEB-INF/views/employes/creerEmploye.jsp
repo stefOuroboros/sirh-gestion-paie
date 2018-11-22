@@ -11,7 +11,7 @@
 <body>
 	<c:import url="../head.jsp"></c:import>
 	<header>
-	<c:import url="../menu.jsp"></c:import>
+		<c:import url="../menu.jsp"></c:import>
 	</header>
 	<h1>Créer Employe</h1>
 	<main class="container"> <form:form method="post"
@@ -19,7 +19,8 @@
 		<div class="form-group">
 			<form:select cssClass="form-control" path="matricule">
 				<form:option value="Veuillez sélectionner votre matricule ..."></form:option>
-				<form:options items="${listeCollegues}" itemValue="matricule" itemLabel="matricule"/>
+				<form:options items="${listeCollegues}" itemValue="matricule"
+					itemLabel="matricule" />
 			</form:select>
 		</div>
 		<div class="form-group">
@@ -31,8 +32,33 @@
 				items="${listeProfilRemuneration}" itemValue="id" itemLabel="code"></form:select>
 		</div>
 		<div class="form-group">
-			<form:select cssClass="form-control" path="grade.id" items="${listeGrades}" itemValue="id"
-				itemLabel="code"></form:select>
+			<form:select cssClass="form-control" path="grade.id"
+				items="${listeGrades}" itemValue="id" itemLabel="code"></form:select>
+		</div>
+		<form:button class="btn btn-primary">Enregistrer</form:button>
+	</form:form> </main>
+
+
+	<main class="container"> <form:form method="post"
+		modelAttribute="collegue">
+		<div class="form-group">
+			<form:select cssClass="form-control" path="matricule">
+				<form:option value="Veuillez sélectionner votre matricule ..."></form:option>
+				<form:options items="${listeCollegues}" itemValue="matricule"
+					itemLabel="matricule" />
+			</form:select>
+		</div>
+		<div class="form-group">
+			<form:select cssClass="form-control" path="entreprise.id"
+				items="${listeEntreprises}" itemValue="id" itemLabel="denomination"></form:select>
+		</div>
+		<div class="form-group">
+			<form:select cssClass="form-control" path="profilRemuneration.id"
+				items="${listeProfilRemuneration}" itemValue="id" itemLabel="code"></form:select>
+		</div>
+		<div class="form-group">
+			<form:select cssClass="form-control" path="grade.id"
+				items="${listeGrades}" itemValue="id" itemLabel="code"></form:select>
 		</div>
 		<form:button class="btn btn-primary">Enregistrer</form:button>
 	</form:form> </main>
