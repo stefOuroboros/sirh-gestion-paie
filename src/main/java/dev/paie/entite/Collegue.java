@@ -1,7 +1,5 @@
 package dev.paie.entite;
 
-import java.time.LocalDate;
-
 public class Collegue {
 	String matricule;
     String nom;
@@ -12,7 +10,7 @@ public class Collegue {
     String adresse;
     String password;
     String photo;
-    String []subalternes;
+    String[] subalternes;
     String departement;
 	public String getMatricule() {
 		return matricule;
