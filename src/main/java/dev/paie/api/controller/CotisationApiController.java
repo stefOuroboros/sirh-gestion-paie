@@ -21,8 +21,6 @@ import dev.paie.repository.CotisationRepository;
 public class CotisationApiController {
 	@Autowired CotisationRepository cotisationRepos;
 	
-	
-	
 	@RequestMapping("/cotisations")
 	public ResponseEntity<List<Cotisation>> findAll() {
 		List<Cotisation> cotisations = cotisationRepos.findAll();
