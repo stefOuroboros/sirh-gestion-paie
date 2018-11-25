@@ -17,8 +17,10 @@
 	<main class="container"> <form:form method="post"
 		modelAttribute="employe">
 		<div class="form-group">
-			<label for="matricule">Matricule</label>
-			<form:input path="matricule" />
+			<form:select cssClass="form-control" path="matricule">
+				<form:option value="Veuillez sélectionner votre matricule ..."></form:option>
+				<form:options items="${listeCollegues}" itemValue="matricule" itemLabel="matricule"/>
+			</form:select>
 		</div>
 		<div class="form-group">
 			<form:select cssClass="form-control" path="entreprise.id"
