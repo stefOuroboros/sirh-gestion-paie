@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -28,6 +27,34 @@
 	<h4>Matricule</h4>
 	<p>${bulletin.remunerationEmploye.matricule}</p>
 	<p>${bulletin.getDateFormat("dd/MM/yyyy hh:mm:ss")}</p>
+	<main class="container">
+	<table class="table table-bordered table-striped table-sm text-center">
+		<tr>
+			<th>Nom :</th>
+			<th>Prénom :</th>
+			<th>Date de naissance :</th>
+			<th>Adresse mail :</th>
+		</tr>
+		<tr>
+			<td>${collegue[0].nom}</td>
+			<td>${collegue[0].prenom}</td>
+			<td>${collegue[0].dateNaissance}</td>
+			<td>${collegue[0].adresse}</td>
+		</tr>
+	</table>
+	<table class="table table-bordered table-striped table-sm text-center">
+		<tr>
+			<th>Adresse postale :</th>
+			<th>Département au sein de l'entreprise :</th>
+			<th>Matricule employé :</th>
+		</tr>
+		<tr>
+			<td>${collegue[0].email}</td>
+			<td>${collegue[0].departement}</td>
+			<td>${collegue[0].matricule}</td>
+		</tr>
+	</table>
+	</main>
 	<h4>Salaire</h4>
 	<table>
 		<thead class="text-center">
@@ -72,7 +99,6 @@
 				<td></td>
 				<td>${calculeSalaires.salaireBrut}</td>
 			</tr>
-
 
 		</tbody>
 	</table>

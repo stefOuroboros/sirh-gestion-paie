@@ -13,9 +13,12 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
 import dev.paie.entite.BulletinSalaire;
+import dev.paie.entite.Collegue;
+import dev.paie.entite.RemunerationEmploye;
 import dev.paie.entite.ResultatCalculRemuneration;
 import dev.paie.repository.BulletinSalaireRepository;
 import dev.paie.repository.PeriodeRepository;
@@ -78,7 +81,10 @@ public class BulletinSalaireController {
     	BulletinSalaire bulletin = bulletinSalaireRepos.findOne(id);
     	mv.addObject("bulletin", bulletin);
     	mv.addObject("calculeSalaires", calculeRemServ.calculer(bulletin));
-
+    	RemunerationEmploye remunerationEmploye = bulletin.getRemunerationEmploye();
+    	RestTemplate rt = new RestTemplate();
+    	Collegue[] collegue = rt.getForObject("http://collegues-api.cleverapps.io/collegues?matricule={matricule}", Collegue[].class, remunerationEmploye.getMatricule());
+    	mv.addObject("collegue", collegue);
     	return mv;
     }
 }

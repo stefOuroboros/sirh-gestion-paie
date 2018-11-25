@@ -10,7 +10,6 @@ import dev.paie.entite.Utilisateur;
 import dev.paie.entite.Utilisateur.ROLES;
 import dev.paie.repository.UtilisateurRepository;
 
-
 @Component
 public class StartUpAppListener {
 
@@ -30,15 +29,15 @@ public class StartUpAppListener {
 		admin.setMotDePasse(passwordEncoder.encode("helloDarknessMyOldFriend"));
 		admin.setEstActif(true);
 		admin.setRole(ROLES.ROLE_ADMINISTRATEUR);
-		
+
 		Utilisateur randomUser = new Utilisateur();
 		randomUser.setNomUtilisateur("Thomas");
 		randomUser.setMotDePasse(passwordEncoder.encode("coucouthomas"));
 		randomUser.setEstActif(true);
 		randomUser.setRole(ROLES.ROLE_UTILISATEUR);
-		
+
 //		utilisateurRepos.save(admin);
 //		utilisateurRepos.save(randomUser);
-		
+
 	}
 }
