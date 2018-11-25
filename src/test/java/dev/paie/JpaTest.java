@@ -1,16 +1,14 @@
-package dev.paie.service;
+package dev.paie;
 import java.math.BigDecimal;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
-
 import dev.paie.config.JpaConfig;
 import dev.paie.entite.Cotisation;
 

@@ -1,18 +1,13 @@
 package dev.paie;
 
 import java.math.BigDecimal;
-import java.sql.ResultSet;
-
 import javax.sql.DataSource;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
-
 import dev.paie.config.DataSourceMySQLConfig;
 import dev.paie.entite.Grade;
 

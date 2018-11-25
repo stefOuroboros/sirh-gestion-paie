@@ -67,7 +67,7 @@
 			</tr>
 			<tr>
 				<th>Salaire Brut</th>
-				<td>I SEE YOU BRO</td>
+				<td></td>
 				<td></td>
 				<td>${calculeSalaires.salaireBrut}</td>
 			</tr>
