@@ -15,7 +15,7 @@
         <!-- Spring Security s'attend aux paramètres "username" et "password" -->
         <form method="post">
             <input name="username">
-            <input name="password">
+            <input type="password" name="password">
             <input type="submit" value="Se connecter">
             <!-- génération du Token CSRF -->
             <sec:csrfInput/>

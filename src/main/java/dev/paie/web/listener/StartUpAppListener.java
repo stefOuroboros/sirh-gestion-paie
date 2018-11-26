@@ -26,7 +26,7 @@ public class StartUpAppListener {
 		// TODO insérer des utilisateurs en base de données
 		Utilisateur admin = new Utilisateur();
 		admin.setNomUtilisateur("admin");
-		admin.setMotDePasse(passwordEncoder.encode("helloDarknessMyOldFriend"));
+		admin.setMotDePasse(passwordEncoder.encode("admin"));
 		admin.setEstActif(true);
 		admin.setRole(ROLES.ROLE_ADMINISTRATEUR);
 

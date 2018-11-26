@@ -39,7 +39,8 @@
 			<td>${collegue[0].nom}</td>
 			<td>${collegue[0].prenom}</td>
 			<td>${collegue[0].dateNaissance}</td>
-			<td>${collegue[0].adresse}</td>
+			<td>${collegue[0].email}</td>
+
 		</tr>
 	</table>
 	<table class="table table-bordered table-striped table-sm text-center">
@@ -49,7 +50,7 @@
 			<th>Matricule employé :</th>
 		</tr>
 		<tr>
-			<td>${collegue[0].email}</td>
+			<td>${collegue[0].adresse}</td>
 			<td>${collegue[0].departement}</td>
 			<td>${collegue[0].matricule}</td>
 		</tr>

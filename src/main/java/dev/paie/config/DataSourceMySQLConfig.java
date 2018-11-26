@@ -15,7 +15,7 @@ public class DataSourceMySQLConfig {
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUrl("jdbc:postgresql://localhost:5432/sirh-paie");
         dataSource.setUsername("postgres");
-        dataSource.setPassword("Jpx39pp4m5qc");
+        dataSource.setPassword("Jpx39p");
         return dataSource;
     }
 
